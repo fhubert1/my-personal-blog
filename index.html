@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Personal Blog</title>
+<!--   <link rel="stylesheet" type="text/css" href="./assets/css/jass.css"> --> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
+  </head>
+
+  <body>
+    <header class="header-card">
+        <div class="header-body">
+            <button>Mode</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col-6 justify-center" >
+            <h1>My Personal Blog</h1>
+        </div>
+        <div class="col-6  dbl-border-left">
+            <div class="card"> 
+                <div class="card-body">
+                    <h2>What's on your mind?</h2>
+                    <form action="blog-form">
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <label for="userName">User Name</label>
+                                <input type="text" class="form-input w-100" id="userName-input" name="userName" />
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-input w-100" id="title-input" name="title" />
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <label for="content">Content</label>
+                                <textarea class="form-input" id="content-input" name="content" rows="10" columns="40" placeholder="What's on your mind today?"></textarea>
+                            </div>
+
+                        </div>
+                        
+                        <button class="btn btn-block btn-danger">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
