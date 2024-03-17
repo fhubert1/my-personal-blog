@@ -109,3 +109,21 @@ h1 {
 .dbl-border-left {
     border-left: 2px double #1a1a1a;
 }
+
+
+/* Dark Mode */
+.dark {
+    background-color:#243447;
+    height: 100vh;
+    color: #bebebe
+   
+  }
+  
+  /* Light Mode */
+  .light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+  }
+  
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/blog.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <title>Blog</title>
+    </head>
+
+    <body class="border border-2" id="blogBody">
+        <!-- header and nav bar -->
+        <div class="container border-bottom border-2">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h3 class="d-inline m-3">My First Blog</h3>
+                </div>
+                <div class="col m-2">
+                    <ul class="list-inline d-flex justify-content-end">
+                        <li class="nav-item">
+                            <button id="btnBack" class="btn btn-secondary">Back</button>
+                        </li>
+                        <li class="nav-item m-2">
+                            <div class="mode-check">
+                                <input class="mode-check-input" type="checkbox" id="modeTheme">
+                                <label class="mode-check-label" for="switchTheme" id="modeLabel">Light Mode</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- container to display blog entries -->
+        <div class="container-fluid m-0">
+            <div class="col" id="cardRow">
+                <!-- create card rows here in blog.js -->
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container m-0">
+            <footer class="my-4">
+                <ul class="nav list-group">
+                    <li class="fw-bold">Portfolio: <a href="https://fhubert1.github.io/fred-hubert-protfolio/"
+                            target="_blank">Fred Hubert</a></li>
+                    <li class="fw-bold">Blog: My First Blog</li>
+                    <li class="fw-bold">Email: <a href="mailto:f.hubert.712@gmail.com">f.hubert.712@gmai.com</li>
+                </ul>
+            </footer>
+        </div>
+        <!-- javascript files -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./assets/js/blog.js"></script>
+    </body>
+<html>
