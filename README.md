@@ -53,6 +53,6 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## Deployment
 
-![Application](https://fhubert1.github.io/my-personal-blog/)
+[My Personal Blog](https://fhubert1.github.io/my-personal-blog/)
 
 
