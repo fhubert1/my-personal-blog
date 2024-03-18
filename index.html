@@ -7,13 +7,17 @@
 <!--   <link rel="stylesheet" type="text/css" href="./assets/css/jass.css"> --> 
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
+   
   </head>
 
-  <body>
-    
+  <body class="border border-2 light" id="indexBody">
+
     <header class="header-card">
         <div class="header-body">
-            <button>Mode</button>
+            <div class="mode-check">
+                <input class="mode-check-input" type="checkbox" id="modeTheme" checked>
+                <label class="mode-check-label" for="switchTheme" id="modeLabel">Light Mode</label>
+            </div>
         </div>
     </header>
     <div class="container">
@@ -25,41 +29,32 @@
                 <div class="card-body">
                     <h2>What's on your mind?</h2>
                     <form id="blog-form">
-
+                        <!-- blog form row -->
                         <div class="row">
-
                             <div class="col-6">
                                 <label for="userName">User Name</label>
                                 <input type="text" class="form-input w-100" id="userName-input" name="userName" />
                             </div>
-
                         </div>
-
                         <div class="row">
-
                             <div class="col-6">
                                 <label for="title">Title</label>
                                 <input type="text" class="form-input w-100" id="title-input" name="title" />
                             </div>
-
                         </div>
-
                         <div class="row">
-
                             <div class="col-6">
                                 <label for="content">Content</label>
                                 <textarea class="form-input" id="content-input" name="content" rows="10" columns="40" placeholder="What's on your mind today?"></textarea>
                             </div>
-
                         </div>
-                        
                         <button class="btn btn-block btn-danger">Submit</button>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <!-- javascripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/logic.js"></script>
   </body>

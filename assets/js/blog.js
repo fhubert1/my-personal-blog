@@ -7,8 +7,8 @@ var modeLabelEl = $('label[for="switchTheme"]');
 var body = $('#blogBody');
 
 
+// function to dynamically create blog cards
 function createCards() {
-
 
     blogData.forEach(data => {
         const cardCol = document.createElement("div");
@@ -30,24 +30,25 @@ function createCards() {
     });
 }
 
+// back button function
 btnBackEl.on('click', function() {
     window.history.back();
 });
 
+// change color mode on click function
 modeCheckEl.on('click', function() {
 
     if(this.checked) {
-        modeLabelEl.text("Dark Mode");
+        modeLabelEl.text("Light Mode");
         body.addClass('light');
         body.removeClass('dark');
     } else {
-        modeLabelEl.text("Light Mode");
+        modeLabelEl.text("Dark Mode");
         body.addClass('dark');
         body.removeClass('light');
     }
 
 })
-
 
 // Call the function to create and fill cards
 createCards();

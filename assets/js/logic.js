@@ -2,22 +2,24 @@ var blogFormEl = $('#blog-form');
 var userNameEl = $('input[name="userName"]');
 var titleEl = $('input[name="title"]');
 var contentEl = $('textarea[name="content"]');
+var modeCheckEl = $('#modeTheme');
+var modeLabelEl = $('label[for="switchTheme"]');
+var body = $('#indexBody');
 
+// blog form object
 var blogEntry = {
     userName: undefined,
     title: undefined,
     commenet: undefined,
 };
 
+// create empty blog entry array
 var blogEntries = [];
 
+// handle submit button function
 function handleBlogFormSubmit(event) {
     // Prevent the default behavior
     event.preventDefault();
-
-    console.log('User Name: ' + userNameEl.val());
-    console.log('Title: ' + titleEl.val());
-    console.log('Content:' + contentEl.val());
 
     var userName = userNameEl.val();
     var title = titleEl.val();
@@ -46,12 +48,35 @@ function handleBlogFormSubmit(event) {
         storageEntries.forEach(element => {
             console.log(element);
         });
-       
+
+        // redirect to blog page if there are entries to display
+        if (blogEntries.length > 1) {
+            clearForm();
+            window.location.href = "blog.html";
+        }
         
     } 
 
+}
 
+// change color mode on click
+modeCheckEl.on('click', function() {
 
+    if(this.checked) {
+        modeLabelEl.text("Light Mode");
+        body.addClass('light');
+        body.removeClass('dark');
+    } else {
+        modeLabelEl.text("Dark Mode");
+        body.addClass('dark');
+        body.removeClass('light');
+    }
+
+})
+
+// reset elements
+function clearForm() {
+    blogFormEl[0].reset();
 }
 
 // Submit event on the form
