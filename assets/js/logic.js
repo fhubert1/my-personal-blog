@@ -50,7 +50,7 @@ function handleBlogFormSubmit(event) {
         });
 
         // redirect to blog page if there are entries to display
-        if (blogEntries.length > 1) {
+        if (blogEntries.length > 0) {
             clearForm();
             window.location.href = "blog.html";
         }
